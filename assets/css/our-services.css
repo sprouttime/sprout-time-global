@@ -1,3 +1,7 @@
+@font-face {
+    font-family: inter;
+    src: url(../fonts/inter/Inter-Light.otf);
+}
 *{
     padding: 0;
     margin: 0;
@@ -124,10 +128,39 @@ hr{
     }
 }
 @media(max-width:950px){
-    .container{
-        width: 100%;
+    
+    .nav-buttons a{
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+    .nav-list-item-cont ul li a{
+        font-size: 10px;
+        margin: 0 20px;
+    }
+    hr{
+        width: 50px;
+        margin-left: 25px;
+    }
+    .inner-nav{
+        justify-content: space-between;
+    }
+    .nav-list-item-cont ul{
+        justify-content: flex-start;
     }
 }
+@media(max-width:750px){
+    .nav-buttons a{
+        font-size: 10px;
+        padding: 10px 10px;
+        margin: 0 10px;
+    }
+    .nav-buttons{
+        width: 40%;
+    }
+}
+
+
+
 .section1{
     padding: 50px 0;
     border-bottom: solid 1px #000;
@@ -165,12 +198,11 @@ hr{
     margin-top: 50px;
 }
 .section1-text1 p{
-    font-family: sans-serif;
-    font-weight: 100;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 300;
     font-size: 20px;
-    line-height: 2;
-    word-spacing: 1px;
-    letter-spacing: 1px;
+    line-height: 186.4%;
 }
 
 .section1-text2{
@@ -182,12 +214,11 @@ hr{
     line-height: 3;
 }
 .section1-text2 p{
-    font-family: sans-serif;
-    font-weight: 100;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 2;
-    word-spacing: 1px;
-    letter-spacing: 1px;
+    line-height: 186.4%;
 }
 .section1-text2 h2{
     font-family: sans-serif;
@@ -256,12 +287,17 @@ hr{
     margin-top: 50px;
 }
 .section2-text1 p{
-    font-family: sans-serif;
+    font-family: inter;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 186.4%;
+    /* font-family: sans-serif;
     font-weight: 100;
     font-size: 20px;
     line-height: 2;
     word-spacing: 1px;
-    letter-spacing: 1px;
+    letter-spacing: 1px; */
 }
 
 .section2-text2{
@@ -273,12 +309,11 @@ hr{
     line-height: 3;
 }
 .section2-text2 p{
-    font-family: sans-serif;
-    font-weight: 100;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 2;
-    word-spacing: 1px;
-    letter-spacing: 1px;
+    line-height: 186.4%;
 }
 .section2-text2 h2{
     font-family: sans-serif;
@@ -348,12 +383,19 @@ hr{
     margin-top: 50px;
 }
 .section3-text1 p{
-    font-family: sans-serif;
+    /* font-family: sans-serif;
     font-weight: 100;
     font-size: 20px;
     line-height: 2;
     word-spacing: 1px;
-    letter-spacing: 1px;
+    letter-spacing: 1px; */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 186.4%;
+
 }
 
 .section3-text2{
@@ -434,12 +476,11 @@ hr{
     margin-top: 50px;
 }
 .section4-text1 p{
-    font-family: sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 2;
-    word-spacing: 1px;
-    letter-spacing: 1px;
+    font-family: inter;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 186.4%;
 }
 
 .section4-text2{
@@ -451,13 +492,18 @@ hr{
     line-height: 3;
 }
 .section4-text2 p{
-    font-family: sans-serif;
+    /* font-family: sans-serif;
     font-weight: 100;
     font-size: 20px;
     line-height: 2;
     word-spacing: 1px;
-    letter-spacing: 1px;
-    margin-bottom: 150px;
+    letter-spacing: 1px; */
+    font-family: inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 186.4%;
+    margin-bottom: 100px;
 }
 .section4-text2 h2{
     font-family: sans-serif;
@@ -495,64 +541,7 @@ hr{
     }  
 }
 
-.section5{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #d8fab9;
-}
-.section5-flex-div{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.flex-img{
-    background-image: url(../img/img.jpg);
-    width: 150px;
-    height: 90px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: auto;
-    margin-right: 50px;
-    border-radius: 50%;
-}
-.flex-text{
-    margin: auto;
-    line-height: 2;
-    font-family: sans-serif;
-    font-size: 15px;
-    font-weight: 100;
-    word-spacing: 3px;
-    letter-spacing: 2px;
-}
-
-.section6{
-    width: 100%;
-    background-color: #74BC31;
-    height: 100px;
-    display: flex;
-    justify-content: end;
-}
-.overlapping-div{
-    width: 30%;
-    margin-right: 150px;
-    /* padding: 20px 0; */
-    height: 130px;
-    background-color: #679f32;
-    text-align: center;
-    position: relative;
-    bottom: 40px;
-    color: white;
-}
-.overlapping-div p{
-    font-family: sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    
-}
-.para1{
-    margin: 30px 0;
-}
+/*  */
 footer{
     padding: 100px 0 10px;
     background-color: #F7F9F3;
@@ -598,7 +587,7 @@ footer{
     letter-spacing: 1px;
 }
 .links1{
-    width: 10%;
+    width: 15%;
     line-height: 2.2;
     margin-left: 50px;
 }
@@ -632,6 +621,41 @@ h4{
     font-weight: 300;
     font-size: 13px;
 }
+@media(max-width:1250px){
+    .footer-content ul li a{
+        font-size: 13px;
+    }
+}
+@media(max-width:950px){
+    .footer-content ul li{
+        font-size: 13px;
+        word-spacing: 1px;
+        letter-spacing: 0;
+    }
+    .links2{
+        width: 20%;
+    }
+}
+@media(max-width:750px){
+    .footer-content ul li a{
+        font-size: 12px;
+    }
+    .footer-content h4{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .vertical-line{
     font-size: 18px;
     font-weight: 100;

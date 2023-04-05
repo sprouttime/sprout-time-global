@@ -16,4 +16,22 @@ function progressLoad(){
 
 }
 
-setInterval(progressLoad,90)
+setInterval(progressLoad,90);
+
+
+
+
+
+
+var nav = document.getElementById("ul");
+    //  var btn = document.getElementById("btn");
+
+function display(){
+    nav.style.display = "none";
+    if (nav.style.display == "none"){
+        nav.style.display = "block";
+        
+    }else{
+        nav.style.display == "none";
+    }
+}
