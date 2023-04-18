@@ -58,6 +58,8 @@ header{
     background-size: cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
+    /* -webkit-transition: -webkit-transform 500ms;
+    -webkit-transform:translate3d(0,0,0); */
     animation-name: change-pic;
     animation-delay: 2s;
     animation-duration: 30s;
@@ -65,10 +67,10 @@ header{
 }
 
 @keyframes change-pic {
-    0%{background-image: url(../img/header-img1.jpeg);}
-    50%{background-image: url(../img/businessman-holding-arrow-graph-growth-business-financial-investment-strategy-planning.jpeg);}
-    75%{background-image: url(../img/group-afro-americans-working-together\ 1.png);}
-    100%{background-image: url(../img/header-img1.jpeg);}
+    0%{background-image: url(../img/header-img1.png);-webkit-transform-style: preserve-3d;}
+    50%{background-image: url(../img/businessman-holding-arrow-graph-growth-business-financial-investment-strategy-planning.png);-webkit-transform-style: preserve-3d;}
+    75%{background-image: url(../img/group-afro-americans-working-together-1.png);-webkit-transform-style: preserve-3d;}
+    100%{background-image: url(../img/header-img1.png);-webkit-transform-style: preserve-3d;}
 }
 .animated-text::before{
     content: "REPRESENT YOU";
@@ -97,7 +99,6 @@ header{
     margin: auto;
 }
 .nav-list-item-cont2 {
-    
     position: relative;
     z-index: 1;
     display: none;
@@ -138,10 +139,7 @@ header{
     background-color: grey;
     color: white;
 }
-/* .nav-list-item-cont2 ul li{
-    margin: 0 0 10px 0;
-    
-} */
+
 hr{
     width: 60px;
     height: 2.5px;
@@ -253,6 +251,12 @@ hr{
         display: none;
     }
 }
+@media(max-width:600px){
+    .nav-buttons{
+        width: 60%;
+    }
+}
+
 
 
 
@@ -283,10 +287,6 @@ hr{
     /* margin-bottom: 40px; */
 }
 .inner-header-content p{
-    /* margin: 40px 0;
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: 500; */
     font-family: inter;
     font-size: 20px;
     font-weight: 100;
@@ -337,13 +337,41 @@ hr{
     }
 }
 @media(max-width:650px){
-    .container{
-        width: 100%;
+    .inner-header-content h1{
+        font-size: 25px;
     }
-    /* .container2{
+    .inner-header-content p{
+        font-size: 10px;
+        word-spacing: 1px;
+        letter-spacing: 0.5px;
+    }
+    .inner-header{
+        height: 50vh;
+    }
+    header{
+        height: 80vh;
+    }
+   #container1{
         width: 100%;
-    } */
+   }
 }
+@media(max-width:550px){
+    .inner-header-content h1{
+        font-size: 20px;
+    }
+    .inner-header-content br{
+        display: none;
+    }
+    .inner-header-content p{
+        font-size: 8px;
+        word-spacing: 0.5px;
+        letter-spacing: 0.5px;
+    }
+    #container1{
+        width: 90%;
+   }
+}
+
 
 
 
@@ -524,6 +552,20 @@ hr{
     }
    
 }
+@media(max-width:550px){
+    .section1-about-text1 p{
+        font-size: 10px;
+    }
+    .section1-about-text1 h3{
+        font-size: 25px;
+    }
+    .second-flex p{
+        font-size: 8px;
+    }
+    .first-flex p{
+        font-size: 8px;
+    }
+}
 
 
 
@@ -617,9 +659,9 @@ hr{
     }
 }
 @media(max-width:850px){
-    .section2-text p{
+    /* .section2-text p{
         font-size: 13px;
-    }
+    } */
     .section2-image{
         width:50%;
     }
@@ -658,38 +700,31 @@ hr{
         margin-bottom: 40px;
     }  
 }
+@media(max-width:550px){
+    .section2-text h2{
+        font-size: 25px;
+    }
+    .section2-text p{
+        font-size: 10px;
+    }
+    .section2-image{
+        width:80%;
+    }
+    .section2-image{
+        height: 200px;
+    }
+}
 
 
 
-/* @media(max-width:1500px){
-     .section2-inner{
-        width: 65%;
-     }
-}
-@media(max-width:1380px){
-    .section2-inner{
-       width: 68%;
-    }
-}
-@media(max-width:1190px){
-    .section2-inner{
-       width: 74%;
-    }
-}
-@media(max-width:1000px){
-    .section2-inner{
-       width: 80%;
-    }
-} */
+
+
 
 
 
 
 
 .section3{
-    /* padding-top: 120px;
-    padding-bottom: 120px; */
-    /* background-color: rgb(80, 173, 80); */
     background-image: url(../img/133665c7b30f3df4418ed2ceccb81e96.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -814,18 +849,12 @@ textarea{
 }
 
 @media(max-width:1390px){
-    /* .container{
-        width: 95%;
-    } */
     .first-text h3{
         font-size: 30px;
     }
     .second-text p{
         font-size: 20px;
     }
-    /* .social-btn-cont{
-        margin-top: 280px;
-    } */
     .link1{
         width: 100px;
     }
@@ -847,9 +876,6 @@ textarea{
     }
 }
 @media(max-width:1210px){
-    /* .container{
-        width: 98%;
-    } */
     .first-text h3{
         font-size: 25px;
     }
@@ -1000,6 +1026,48 @@ textarea{
     }
     .second-text p br{
         display: none;
+    }
+}
+@media(max-width:550px){
+    .social-btns{
+        width: 60%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .social-btn-cont{
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    .app-btn1{
+        background-image: url(../img/images.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        width: 95px;
+        height: 31px;
+        
+    }
+    .app-btn2{
+        background-image: url(../img/download.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        width: 100.75px;
+        height: 31px;
+        
+    }
+    .first-text h3{
+        font-size: 20px;
+    }
+    .second-text p{
+        font-size: 10px;
+        word-spacing: 0;
+        letter-spacing: 0.5px;
+    }
+    .section3-form-content p{
+        font-size: 10px;
+        word-spacing: 0;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -1186,13 +1254,47 @@ h4{
     }
 }
 @media(max-width:750px){
+    .footer-inner{
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+    .footer-content{
+        display: block;
+    }
     .footer-content ul li a{
         font-size: 12px;
     }
     .footer-content h4{
         font-size: 15px;
     }
+    .icons{
+        width: 50%;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .links1, .links2, .links3{
+        width: fit-content;
+        margin-top: 40px;
+    }
+    .links1{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .copyright-text{
+        display: block;
+        line-height: 30px;
+        width: fit-content;
+    }
+    .copyright-text p{
+        width: fit-content;
+    }
 }
+@media(max-width: 400px){
+    .copyright-text p span{
+        font-size: 11px;
+    }
+}
+
 
 
 

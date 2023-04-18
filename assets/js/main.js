@@ -23,15 +23,27 @@ setInterval(progressLoad,90);
 
 
 
-var nav = document.getElementById("ul");
+
     //  var btn = document.getElementById("btn");
 
+
 function display(){
+    var nav = document.getElementById("ul");
     nav.style.display = "none";
-    if (nav.style.display == "none"){
+    if (nav.classList.toggle(nav.style.display = "none")){
         nav.style.display = "block";
         
     }else{
         nav.style.display == "none";
     }
 }
+
+
+
+
+
+
+
+
+
+

@@ -935,11 +935,44 @@ h4{
     }
 }
 @media(max-width:750px){
+    .footer-inner{
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+    .footer-content{
+        display: block;
+    }
     .footer-content ul li a{
         font-size: 12px;
     }
     .footer-content h4{
         font-size: 15px;
+    }
+    .icons{
+        width: 50%;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .links1, .links2, .links3{
+        width: fit-content;
+        margin-top: 40px;
+    }
+    .links1{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .copyright-text{
+        display: block;
+        line-height: 30px;
+        width: fit-content;
+    }
+    .copyright-text p{
+        width: fit-content;
+    }
+}
+@media(max-width: 400px){
+    .copyright-text p span{
+        font-size: 11px;
     }
 }
 
