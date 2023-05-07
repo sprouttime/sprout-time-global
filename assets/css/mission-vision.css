@@ -204,7 +204,13 @@ hr{
     .button{
         width: 50px;
         height: 50px;
-        background-color: #3B6618;
+        border: 2px solid  rgb(74, 216, 74);
+        border-radius: 10px;
+    }
+    .button img{
+        width: 40px;
+        height: 50px;
+        margin: 0 5px;
     }
     hr{
         display: none;
@@ -290,10 +296,31 @@ hr{
     font-weight: 600;
 }
 .img1{
-    width: 77px;
-    height: 77px;
-    background-image: url(../img/ux.png);
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/feTarget2.png);
+    background-repeat: no-repeat;
     background-size: contain;
+    margin-bottom: 20px;
+
+}
+.img2{
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/Vector\ \(9\).png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    margin-bottom: 20px;
+
+}
+.img3{
+    width:  70px;
+    height:  70px;
+    background-image: url(../img/Vector\ \(6\)\ 2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 20px;
+
 }
 .section1-content hr{
     width: 67px;
@@ -428,13 +455,17 @@ hr{
     line-height: 203.9%;
     margin-top: 20px;
 }
-.flex-divs i{
-    font-size: 77px;
-    margin-bottom: 50px;
-    color: #74BC31;
-    /* padding: 30px;
+.flex-divs div{
+    width: 77px;
+    height: 77px;
+    margin: auto;
     border-radius: 50%;
-    background-color: rgba(234, 234, 234, 0.437); */
+    border: solid 1px #74BC31;
+}
+.flex-divs div img{
+    width: 35px;
+    height: 35px;
+    margin: 20px 0;
 }
 @media (max-width:1480px) {
     .section4-text p{

@@ -208,7 +208,13 @@ hr{
     .button{
         width: 50px;
         height: 50px;
-        background-color: #3B6618;
+        border: 2px solid  rgb(74, 216, 74);
+        border-radius: 10px;
+    }
+    .button img{
+        width: 40px;
+        height: 50px;
+        margin: 0 5px;
     }
     hr{
         display: none;
@@ -693,12 +699,13 @@ hr{
     margin-top: 20px;
 }
 .flex-divs i{
-    font-size: 77px;
-    margin-bottom: 50px;
-    color: #74BC31;
-    /* padding: 30px;
-    border-radius: 50%;
-    background-color: rgba(234, 234, 234, 0.437); */
+    width: 77px;
+    height: 77px;
+}
+.flex-divs i img{
+    width: 80px;
+    height: 77px;
+    margin: 20px 0;
 }
 @media (max-width:1480px) {
     .section4-text p{
